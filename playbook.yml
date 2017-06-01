@@ -29,7 +29,7 @@
       java_packages:
         - openjdk-8-jdk
 
-    - role: kostyrevaa.epel
+    - role: kostyrev.epel
       when: ansible_os_family == 'RedHat'
 
     - role: kostyrev.datastax-dsc
