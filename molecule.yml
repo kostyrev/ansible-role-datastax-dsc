@@ -11,7 +11,7 @@ docker:
   containers:
     - name: centos-6-cassandra
       image: centos
-      image_version: 6
+      image_version: 6.8
       cap_add: SYS_RESOURCE
 
     - name: ubuntu-14-04
