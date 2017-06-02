@@ -5,9 +5,3 @@
     name: cassandra
     state: restarted
   when: datastax_dsc_manage_cassandra_service
-
-- name: wait_for cassandra
-  wait_for:
-    path: "/var/log/cassandra/{{ cassandra_log_name }}"
-    search_regex: 'state jump to NORMAL'
-  when: datastax_dsc_manage_cassandra_service
