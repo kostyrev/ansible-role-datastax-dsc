@@ -2,7 +2,7 @@
 # defaults file for kostyrev.datastax-dsc
 datastax_dsc_major: 2
 datastax_dsc_minor: 2
-datastax_dsc_patch: 6
+datastax_dsc_patch: 8
 datastax_dsc_cassandra_user: cassandra
 datastax_dsc_cassandra_group: "{{ datastax_dsc_cassandra_user }}"
 datastax_dsc_cassandra_conf_dir_mode: '0755'
