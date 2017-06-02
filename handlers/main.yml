@@ -5,3 +5,9 @@
     name: cassandra
     state: restarted
   when: datastax_dsc_manage_cassandra_service
+
+- name: wait for cassandra
+  wait_for:
+    port: 9042
+    delay: 10
+  when: datastax_dsc_manage_cassandra_service
